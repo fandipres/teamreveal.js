@@ -12,6 +12,12 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+		.memberPicture {
+			width: 25%;
+			padding: 10px;
+		}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -130,12 +136,13 @@
                         banyak memory daripada Native DOM.</small></p>
 
             </section>
-							<section>
-				<h2>Kode React</h2>
-			</section>
 			<section>
-				<h3>Contoh Component React</h3>
-				<pre><code>
+				<section>
+					<h2>Kode React</h2>
+				</section>
+				<section>
+					<h3>Contoh Component React</h3>
+					<pre><code data-line-numbers="2-10|12-16">
 					class HelloMessage extends React.Component {
 						render() {
 						  return (
@@ -151,27 +158,57 @@
 						document.getElementById('hello-example')
 					  );
 				</code></pre>
-			</section>
-							<section>
-				<h2>Contoh Penggunaan</h2>
+				</section>
 			</section>
 			<section>
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png"
-					style="height: 250px;" />
+				<section>
+					<h2>Contoh Penggunaan</h2>
+				</section>
+				<section data-background-color="white">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png"
+						style="height: 250px;" />
+				</section>
+				<section data-background-image="img/website/facebook.png">
+				</section>
+				<section data-background-color="white">
+					<img src="https://assets.website-files.com/5ee732bebd9839b494ff27cd/5ee732bebd98393d75ff281d_580b57fcd9996e24bc43c529.png"
+						style="height: 250px;" />
+				</section>
+				<section data-background-image="img/website/netflix.png">
+				</section>
+				<section data-background-color="white">
+					<img src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_960_720.png"
+						style="height: 250px;" />
+				</section>
+				<section data-background-image="img/website/paypal.png">
+				</section>
 			</section>
-			<section data-background-image="img/website/facebook.png">
-			</section>
-			<section>
-				<img src="https://assets.website-files.com/5ee732bebd9839b494ff27cd/5ee732bebd98393d75ff281d_580b57fcd9996e24bc43c529.png"
-					style="height: 250px;" />
-			</section>
-			<section data-background-image="img/website/netflix.png">
-			</section>
-			<section>
-				<img src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_960_720.png"
-					style="height: 250px;" />
-			</section>
-			<section data-background-image="img/website/paypal.png">
+						<section>
+				<h2>Group 2</h2>
+				<div style="display: flex;">
+					<div class="memberPicture">
+						<img data-src="img/team/ebnu.jpg" />
+						<small>181114087 <br>
+							Ebnu Mulkan Arsie</small>
+					</div>
+					<div class="memberPicture">
+						<img data-src="img/team/fandi.jpg" />
+						<small>181112159 <br>
+							Fandi Presly Simamora</small>
+					</div>
+					<div class="memberPicture">
+						<img data-src="img/team/fiqri.jpeg" />
+						<small>181114087 <br>
+							Mhd. Dwi Al Fiqri</small>
+					</div>
+					<div class="memberPicture">
+						<img data-src="img/team/agil.jpeg" />
+						<small>181113863 <br>
+							Muhammad Farid Agil Pardomuan</small>
+					</div>
+				</div>
+				<br>
+				<small><a href="#slideOne">Back to First Slide</a></small>
 			</section>
 			</div>
 		</div>
