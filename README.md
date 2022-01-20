@@ -1,28 +1,49 @@
 <p align="center">
-  <a href="https://revealjs.com">
-  <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="450">
-  </a>
+  <img src="img/react_logo.png" alt="reveal.js" height="300">
   <br><br>
-  <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/workflows/tests/badge.svg"></a>
-  <a href="https://slides.com/"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
+  <b><a href="https://reactjs.org/">reactjs.org</a></b>
 </p>
 
-reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create fully featured and beautiful presentations for free. [Check out the live demo](https://revealjs.com/).
+<h1>Apa Itu React</h1>
 
-The framework comes with a broad range of features including [nested slides](https://revealjs.com/vertical-slides/), [Markdown support](https://revealjs.com/markdown/), [Auto-Animate](https://revealjs.com/auto-animate/), [PDF export](https://revealjs.com/pdf-export/), [speaker notes](https://revealjs.com/speaker-view/), [LaTeX typesetting](https://revealjs.com/math/), [syntax highlighted code](https://revealjs.com/code/) and much more.
+## Berkenalan dengan React
+<p>React merupakan salah satu library Javascript terpopuler untuk membuat user interface (UI). Tool ini menawarkan respons cepat untuk user input dengan menggunakan metode baru dalam proses rendering website.</p>
+<p>React memungkinkan developer untuk membuat user interface yang kompleks dari kumpulan-kumpulan kode dengan cara memecah bagian-bagian dari UI tersebut menjadi "component" yang lebih kecil.</p>
 
-<h1>
-  <a href="https://revealjs.com/installation" style="font-size: 3em;">Get Started</a>
-</h1>
+## Siapa Pengembang React
+<img src="https://thediffpodcast.com/assets/images/jordan-2c43ff762e625d49ea58424e3e74188a.jpg" height="250"/>
+<p>Resmi dirilis pada tahun 2013, React JS dibuat oleh Jordan Walke yang merupakan salah satu karyawan Facebook (sekarang Meta). Sebagai kerangka kerja aplikasi open-source yang dibuat oleh Facebook, React juga dapat digunakan untuk mengembangkan aplikasi multiplatform.</p>
 
-## Documentation
-The full reveal.js documentation is available at [revealjs.com](https://revealjs.com).
+<h1>Kelebihan dan Kekurangan</h1>
 
-## Online Editor
-Want to create your presentation using a visual editor? Try the official reveal.js presentation platform for free at [Slides.com](https://slides.com). It's made by the same people behind reveal.js.
+## Kelebihan React
+- Mudah untuk dipelajari dan dipergunakan karena menerapkan gaya penulisan deklaratif.
+- Memungkinkan pengembangan aplikasi multiplatform, dengan demikian dalam satu pengembangan aplikasi dapat berjalan pada beberapa paltform.
+- Penulisan komponen lebih mudah dengan adanya JSX yang dapat mengombinasikan HTML dan Javascript.
+- Komponen yang bersifat reusability sehingga kode yang sebelum-sebelumnyanya dipergunakan tidak perlu mengalami banyak perubahan.
+- Komunitas yang aktif dan cukup besar.
 
-## License
+## Kekurangan React
+- Dokumentasi yang tidak terlalu lengkap sehingga bagi para "pemula" akan cukup sulit untuk mempelajarinya.
+- Kinerja yang cukup rendah sebagai dampak dari aplikasi yang dapat berjalan pada beberapa paltform.
+- Masalah debugging dan kompabilitas.
 
-MIT licensed
+<h1>Performansi</h1>
+<p>Uji coba performansi dilakukan dengan membandingkan performa dari React dan Native DOM dalam hal meload 100 baris data. Informasi lebih lanjut mengenai uji coba performansi dapat dilihat melalui postingan Object Partners berikut <a href="https://objectpartners.com/2015/11/19/comparing-react-js-performance-vs-native-dom/">Comparing React.js performance vs. native DOM</a>.</p>
 
-Copyright (C) 2011-2021 Hakim El Hattab, https://hakim.se
+<h1>Contoh Kode</h1>
+
+```
+class HelloMessage extends React.Component {render() {
+  return (
+    <div>
+      Hello {this.props.name}
+    </div>
+  );
+}}
+					  
+ReactDOM.render(
+  <HelloMessage name="World" />,
+  document.getElementById('hello-example')
+);
+ ```
